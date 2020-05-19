@@ -1,0 +1,15 @@
+{% extends 'blogapp/base.html' %}
+{% block basecontent %}
+<div class="container">
+<div class="jumbotron myclass">
+    <!-- Create a Form -->
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        <h5>Are you sure want to delete this item?
+        <input type="submit" class="btn" style="background-color:red;color:white;"  value="Confirm" />
+        <a href="/" class="btn btn-primary">Cancel </a></h5>
+    </form>
+</div>
+</div>
+{% endblock %}

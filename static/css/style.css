@@ -1,0 +1,33 @@
+.navbar-custom{
+  background-color: #0c7ac9;
+}
+.navbar-nav  .nav-link{
+  color: white;
+}
+.navbar-nav > li{
+  margin-left:30px;
+  font-size: 18px;
+}
+.myclass{
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 60%;
+  color: white;
+  background-color: #827e7c !important;
+}
+.btn-primary{
+  background-color: #0c7ac9 !important;
+  color: white !important;
+}
+
+
+#hint_id_username {
+  color: white !important;
+}
+.media{
+background: #827e7c!important;
+color: white!important;
+}
+a{
+  color: white!important;
+}

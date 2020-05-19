@@ -1,0 +1,19 @@
+{% extends 'blogapp/base.html' %}
+{% block basecontent %}
+<div class="container">
+    <h1>Blogs</h1>
+    {% if blogs %}
+    {% for blog in blogs %}
+  <div class="media border p-3">
+  <img src="{{blog.file.url}}" alt="John Doe" class="mr-3 mt-3 " style="width:200px; height:130px;">
+  <div class="media-body">
+    <h4>{{blog.author}} <small><i>{{blog.posted_date | timesince}} ago</i></small></h4>
+    <h5><a href="/detailblog/{{blog.id}}">{{blog.title}}</a></h5>
+    <p>{{blog.description|truncatewords:"50"|linebreaks}}</p>
+  </div>
+</div>
+<br>
+{% endfor %}
+{% endif %}
+</div>
+{% endblock %}
