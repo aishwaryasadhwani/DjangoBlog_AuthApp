@@ -14,7 +14,8 @@
     {% if request.user.username == blog.author  %}
       <form  method="post">
         {% csrf_token %}
-        <h5><a href="/delete/{{blog.id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a></h5>
+        <h5><a href="/delete/{{blog.id}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</a>
+        <a href="/update/{{blog.id}}" class="btn btn-success"><i class="fas fa-pen"></i> Update</a></h5>
       </form>
     {% endif %}
 
